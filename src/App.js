@@ -2,6 +2,7 @@ import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import { withStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
+import withWidth from '@material-ui/core/withWidth';
 import React, { Component } from 'react';
 import './App.css';
 
@@ -20,6 +21,15 @@ const styles = theme => ({
 class App extends Component {
   render() {
     const { classes } = this.props;
+    const { width } = this.props;
+
+    const typeSize = {
+      xs: 'display3',
+      sm: 'display3',
+      md: 'display4',
+      lg: 'display4',
+      xl: 'display4'
+    };
 
     const links = [
       { name: 'GitHub', url: 'https://github.com/philals' },
@@ -30,7 +40,7 @@ class App extends Component {
     return (
       <div>
         <div className={classes.root}>
-          <Typography variant="display4" align='center' gutterBottom>Hey, I'm Phil ;)</Typography>
+          <Typography variant={typeSize[width]} align='center' gutterBottom>Hey, I'm Phil ;)</Typography>
         </div>
 
 
@@ -52,4 +62,4 @@ class App extends Component {
   }
 }
 
-export default withStyles(styles)(App);
+export default withStyles(styles)(withWidth()(App));
