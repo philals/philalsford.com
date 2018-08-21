@@ -43,7 +43,6 @@ class App extends Component {
           <Typography variant={typeSize[width]} align='center' gutterBottom>Hey, I'm Phil ;)</Typography>
         </div>
 
-
         <Grid container className={classes.buttons} spacing={16}>
           <Grid item xs={12}>
             <Grid container justify="center" spacing={40}>
@@ -57,7 +56,6 @@ class App extends Component {
             </Grid>
           </Grid>
         </Grid>
-
 
       </div>
     );
