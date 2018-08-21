@@ -34,7 +34,8 @@ class App extends Component {
     const links = [
       { name: 'GitHub', url: 'https://github.com/philals' },
       { name: 'Twitter', url: 'https://twitter.com/phil_als' },
-      { name: 'Linkedin', url: 'https://www.linkedin.com/in/philalsford/' }
+      { name: 'Linkedin', url: 'https://www.linkedin.com/in/philalsford/' },
+      { name: 'Movies', url: 'https://movies.philalsford.com' }
     ]
 
     return (
