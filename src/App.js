@@ -41,7 +41,7 @@ class App extends Component {
     return (
       <div>
         <div className={classes.root}>
-          <Typography variant={typeSize[width]} align='center' gutterBottom>Hey, I'm Phil ;)</Typography>
+          <Typography variant={typeSize[width]} align='center' gutterBottom>Hey, I'm Phil.</Typography>
         </div>
 
         <Grid container className={classes.buttons} spacing={16}>
